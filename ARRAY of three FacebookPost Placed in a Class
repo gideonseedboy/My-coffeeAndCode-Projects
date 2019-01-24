@@ -1,0 +1,32 @@
+
+// Creat an ARRAY of three FacebookPost they should all have the same class.
+
+class FacebookPost{
+    constructor(creatorsName, postTiltle, postDate, photoURL, postId, postTextBody){
+        this.creatorsName = creatorsName;
+        this.postTiltle = postTiltle;
+        this.postDate = postDate;
+        this.photoURL = photoURL;
+        this.postId = postId;
+        this.postTextBody = postTextBody;  
+    }
+   
+
+     postPreview(){
+            console.log(`Hello Checkout ${this.creatorsName}` + "'s new facebook post tittled: " + `${this.postTiltle}`);
+        }
+
+        
+}
+
+
+
+const facebookPost01 = new FacebookPost('Gideonseedboy', 'Knowledg-is-Free', '4:53:13-13/Dec/2019', 'http://hypercoder.com/about.html.feeturedImage.png', 'id000110', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.');
+
+const facebookPost02 = new FacebookPost('Kodjo Boateng', 'WHEN YOU MEET FACETO FACE WITH TRUTH', '5:00:13-13/Mar/2017', 'http://gideonseedboy.com/index.html.siteLogo.png', 'id000550', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.');
+
+const facebookPost03 = new FacebookPost('Moses Basin', 'Coffe and Code Freecode Camp Accra, Legon Campus', '17:00:55-23/Jan/2017', 'http://hypergidi.com/index.html.siteLogo.png', 'id003300', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.');          
+
+
+facebookPost01.postPreview();
+facebookPost02.postPreview();
